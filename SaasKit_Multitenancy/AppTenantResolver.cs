@@ -12,14 +12,14 @@ namespace SaasKit_Multitenancy
             {
                 tenant = new AppTenant { 
                     Name = "TenantProductionRepository",
-                    ConnectionString = "Server = SRVDEV01; Database = ProductionRepository; Integrated Security = False; Persist Security Info = False; User ID = billingdev; Password = Talk2012; TrustServerCertificate = True; "
+                    ConnectionString = "Server = *; Database = ProductionRepository; Integrated Security = False; Persist Security Info = False; User ID = *; Password = *; TrustServerCertificate = True; "
                 };
             }
             else // Default Tenant
             {
                 tenant = new AppTenant { 
                     Name = "TenantKeyCloak",
-                    ConnectionString = "Server = SRVDEV01; Database = KeyCloak; Integrated Security = False; Persist Security Info = False; User ID = billingdev; Password = Talk2012; TrustServerCertificate = True; "
+                    ConnectionString = "Server = *; Database = KeyCloak; Integrated Security = False; Persist Security Info = False; User ID = *; Password = *; TrustServerCertificate = True; "
                 };
             }
 
