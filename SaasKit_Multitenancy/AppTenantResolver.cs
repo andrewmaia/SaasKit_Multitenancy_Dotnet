@@ -15,7 +15,7 @@ namespace SaasKit_Multitenancy
                     ConnectionString = "Server = *; Database = ProductionRepository; Integrated Security = False; Persist Security Info = False; User ID = *; Password = *; TrustServerCertificate = True; "
                 };
             }
-            else // Default Tenant
+            else if (context.Request.Host.Value.Contains("7030"))
             {
                 tenant = new AppTenant { 
                     Name = "TenantKeyCloak",
